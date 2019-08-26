@@ -1,0 +1,4 @@
+species,replicate,conc,time,total,effect
+FHM,1,0,96,10,0
+FHM,2,0.081,24,1,9
+FHM,3,0.24,48,3,7

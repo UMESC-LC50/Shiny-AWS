@@ -1,0 +1,512 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://prd-wret.s3-us-west-2.amazonaws.com/assets/magma/production/s3fs-public/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>@theCore</title>
+  <style>
+@import url("https://atthecore.usgs.gov/modules/system/system.base.css?pt1ilb");
+</style>
+<style>
+@import url("https://atthecore.usgs.gov/sites/all/modules/contrib/date/date_api/date.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/modules/field/theme/field.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/modules/custom/scald/modules/fields/mee/css/editor-global.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/modules/node/node.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/modules/custom/scald_file/scald_file.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/modules/contrib/views/css/views.css?pt1ilb");
+</style>
+<style>
+@import url("https://atthecore.usgs.gov/sites/all/modules/contrib/ctools/css/ctools.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/modules/contrib/panels/css/panels.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/modules/contrib/rate/rate.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/modules/contrib/improved_multi_select/improved_multi_select.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/libraries/superfish/css/superfish.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/libraries/superfish/css/superfish-smallscreen.css?pt1ilb");
+</style>
+<style media="only screen">
+@import url("https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/css/font-awesome.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/css/ie.css?pt1ilb");
+@import url("https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/css/style.css?pt1ilb");
+</style>
+<style media="print">
+@import url("https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/css/print.css?pt1ilb");
+</style>
+<style>
+@import url("https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/css/slick.css?pt1ilb");
+</style>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="https://atthecore.usgs.gov/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script src="https://atthecore.usgs.gov/misc/jquery.once.js?v=1.2"></script>
+<script src="https://atthecore.usgs.gov/misc/drupal.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/modules/contrib/improved_multi_select/improved_multi_select.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/libraries/superfish/sfsmallscreen.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/libraries/superfish/supposition.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/libraries/superfish/superfish.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/libraries/superfish/supersubs.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/modules/contrib/superfish/superfish.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/tooltip.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/modal.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/dropdown.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/collapse.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/slick.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/bootstrap-select.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/dragdrop.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/magma.js?pt1ilb"></script>
+<script src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/assets/js/js.cookie.js?pt1ilb"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"usgs_magma","theme_token":"y2xq4hOuG1iRlIu7YsXaWtRWScG13uEdCVF4NcDYcOg","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/improved_multi_select\/improved_multi_select.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/contrib\/superfish\/superfish.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/tooltip.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/modal.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/dropdown.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/collapse.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/slick.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/bootstrap-select.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/dragdrop.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/magma.js":1,"sites\/all\/themes\/usgs_magma\/assets\/js\/js.cookie.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/scald\/modules\/fields\/mee\/css\/editor-global.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/custom\/scald_file\/scald_file.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib\/rate\/rate.css":1,"sites\/all\/modules\/contrib\/improved_multi_select\/improved_multi_select.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-smallscreen.css":1,"sites\/all\/themes\/usgs_magma\/assets\/css\/font-awesome.css":1,"sites\/all\/themes\/usgs_magma\/assets\/css\/ie.css":1,"sites\/all\/themes\/usgs_magma\/assets\/css\/style.css":1,"sites\/all\/themes\/usgs_magma\/assets\/css\/print.css":1,"sites\/all\/themes\/usgs_magma\/assets\/css\/bootstrap.min.css":1,"sites\/all\/themes\/usgs_magma\/assets\/css\/overrides.min.css":1,"sites\/all\/themes\/usgs_magma\/assets\/css\/slick.css":1}},"blue_banner_id":"Top-alert-04-1902018-topic","yellow_banner_id":"Bottom-alert-04-1902018-topic","better_exposed_filters":{"views":{"homepage":{"displays":{"panel_pane_1":{"filters":[]}}}}},"improved_multi_select":{"selectors":[".group-taxonomy select[multiple]",".field-widget-og-complex select[multiple]"],"isblacklist":0,"filtertype":"partial","orderable":0,"groupresetfilter":0,"buttontext_add":"+ Selected","buttontext_addall":"+ All","buttontext_del":"- Selected","buttontext_delall":"- All","buttontext_moveup":"Move up","buttontext_movedown":"Move down"},"superfish":[{"id":"1","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","autoArrows":false},"plugins":{"supposition":true,"supersubs":true}},{"id":"2","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast"},"plugins":{"smallscreen":{"mode":"window_width","breakpointUnit":"px","title":"Footer"},"supposition":true,"supersubs":true}}],"bootstrap":{"anchorsFix":"0","anchorsSmoothScrolling":"0","formHasError":1,"popoverEnabled":1,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":1,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+  
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PLMTX8S');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+<body class="html front logged-in no-sidebars home">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+<header id="navbar" role="banner" class="navbar container-fluid navbar-magma">
+  <div class="container">
+    <div class="row">
+
+    <div class="col-lg-12">
+
+      <a class="logo navbar-btn pull-left" href="/" title="Home">
+        <img src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/logo.png" alt="Home" />
+      </a>
+
+      <div class="nav-right">
+         <nav class="magma-main-nav" role="navigation">
+                        <div class="region region-navigation">
+    <section id="block-superfish-1" class="block block-superfish clearfix">
+
+      
+  <ul  id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-5 sf-parent-items-3 sf-single-items-2 magma-main-header"><li id="menu-8045-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/leadership/leaders-blog" class="sf-depth-1 menuparent">From Leadership</a><ul><li id="menu-13657-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/leadership/leaders-blog" class="sf-depth-2">The Leaders Blog</a></li><li id="menu-13658-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/leadership/employee-memos" class="sf-depth-2">All-employee Memos</a></li><li id="menu-13659-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/leadership/employee-announcements" class="sf-depth-2">All-employee Announcements</a></li><li id="menu-13660-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="/leadership/meeting-notes" title="" class="sf-depth-2">Director&#039;s Staff Meeting Notes</a></li></ul></li><li id="menu-13644-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/our-organization/executive-leadership-team" class="sf-depth-1 menuparent">Our Organization</a><ul><li id="menu-13641-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/our-organization/executive-leadership-team" class="sf-depth-2">Executive Leadership Team (ELT)</a></li><li id="menu-13649-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/our-organization/science-support" class="sf-depth-2">Science Support</a></li><li id="menu-13645-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/our-organization/mission-areas-and-programs" class="sf-depth-2">Mission Areas and Programs</a></li><li id="menu-17045-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="https://www.usgs.gov/science/regions" class="sf-depth-2">Regions (Public Websites)</a></li><li id="menu-13651-1" class="last odd sf-item-5 sf-depth-2 sf-no-children"><a href="/our-organization/science-centers" class="sf-depth-2">Science Centers and Observatories</a></li></ul></li><li id="menu-12329-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-18 sf-parent-children-0 sf-single-children-18 menuparent"><a href="/tools-and-tasks" class="sf-depth-1 menuparent">Tools and Tasks</a><ul><li id="menu-17263-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="https://atthecore.usgs.gov/about-thecore" class="sf-depth-2">About @theCore</a></li><li id="menu-13669-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="https://internal.usgs.gov/ops/basis/" target="_blank" class="sf-depth-2">BASIS+</a></li><li id="menu-13666-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="https://cge.concursolutions.com/" target="_blank" class="sf-depth-2">Concur</a></li><li id="menu-17258-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/a-to-z/drupal-content-management-external" class="sf-depth-2">Drupal Content Management (external)</a></li><li id="menu-13662-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="https://doitalent.ibc.doi.gov/" target="_blank" class="sf-depth-2">DOI Talent</a></li><li id="menu-13663-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="https://www.employeeexpress.gov/Default.aspx" target="_blank" class="sf-depth-2">Employee Express</a></li><li id="menu-13670-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="https://eopf.opm.gov/doi/" target="_blank" class="sf-depth-2">eOPF</a></li><li id="menu-13672-1" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="https://www.fbms.doi.net/irj/portal" target="_blank" class="sf-depth-2">FBMS</a></li><li id="menu-13656-1" class="middle odd sf-item-9 sf-depth-2 sf-no-children"><a href="https://www.google.com/contacts/u/0/?hl=en&amp;tab=mC#contacts/group/27/Directory" target="_blank" class="sf-depth-2">Find an Employee</a></li><li id="menu-13665-1" class="middle even sf-item-10 sf-depth-2 sf-no-children"><a href="https://webforms.usgs.gov/Pages/default.aspx" target="_blank" class="sf-depth-2">Forms</a></li><li id="menu-16710-1" class="middle odd sf-item-11 sf-depth-2 sf-no-children"><a href="https://internal.usgs.gov/thecore/news/2017/12/15/gs-talk-training-and-recordings/" class="sf-depth-2">GS Talk</a></li><li id="menu-17056-1" class="middle even sf-item-12 sf-depth-2 sf-no-children"><a href="https://insight.usgs.gov/do/osqi/ipds/default.aspx" class="sf-depth-2">Information Product Data System (IPDS)</a></li><li id="menu-13661-1" class="middle odd sf-item-13 sf-depth-2 sf-no-children"><a href="https://itsupport.usgs.gov/" target="_blank" class="sf-depth-2">IT Service Desk</a></li><li id="menu-13655-1" class="middle even sf-item-14 sf-depth-2 sf-no-children"><a href="https://qtime.ibc.doi.gov/proweb/qtime1538/login" target="_blank" class="sf-depth-2">Quicktime (Time/Attendance)</a></li><li id="menu-12330-1" class="middle odd sf-item-15 sf-depth-2 sf-no-children"><a href="https://www.usgs.gov/connect/social-media" target="_blank" class="sf-depth-2">Social Media</a></li><li id="menu-13664-1" class="middle even sf-item-16 sf-depth-2 sf-no-children"><a href="https://www.tsp.gov/index.html" target="_blank" class="sf-depth-2">Thrift Savings Plan</a></li><li id="menu-13673-1" class="middle odd sf-item-17 sf-depth-2 sf-no-children"><a href="https://www.usgs.gov/about/organization/science-support/survey-manual/manual-chapters" target="_blank" class="sf-depth-2">USGS Survey Manual</a></li><li id="menu-16709-1" class="last even sf-item-18 sf-depth-2 sf-no-children"><a href="https://www.usgs.gov/connect/staff-profiles" class="sf-depth-2">USGS Staff Profiles</a></li></ul></li><li id="menu-4463-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/a-to-z" class="sf-depth-1">A-Z Index</a></li><li id="menu-15955-1" class="last odd sf-item-5 sf-depth-1 sf-no-children"><a href="/my-profile" class="sf-depth-1">My Profile</a></li></ul>
+</section>
+  </div>
+                  </nav>
+
+        <div class="header-search">
+          <form action="/search-results" method="GET">
+           <label for="search_results" class="sr-only">Search</label>
+           <input id="search_results" type="search" name="search" placeholder="Search" class="col-lg-12">
+           <button class="fa fa-search" type="submit">
+             <span class="sr-only">Search</span>
+           </button>
+         </form>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+
+  </div>
+</header>
+
+<!-- at the core logo -->
+<div class="container">
+    <div class="nav-internal-tagline">
+      <div class="magma-slogan">
+        <a href="/" title="Home">@theCore</a>
+      </div>
+      <div class="magma-tagline">Internal USGS Access Only</div>
+    </div>
+</div>
+
+<!-- global alert banners -->
+
+<!-- yellow banner -->
+
+<div class="main-container container">
+
+  <header role="banner" id="page-header">
+      </header> <!-- /#page-header -->
+
+  <div class="row">
+  <div class="messages-container col-lg-12 col-xs-12"></div>                           
+  </div>
+
+</div> <!-- /.main-container -->
+
+
+  <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <div class="bootstrap-onecol-fullwidth-homepage" >
+  
+  <!-- full width -->
+  <div class="full-width">
+    <div class="panel-pane pane-fieldable-panels-pane pane-current-21 pane-bundle-carousel"  >
+  
+        <h2 class="pane-title">
+      Homepage    </h2>
+    
+  
+  <div class="pane-content">
+          <div class="fieldable-panels-pane carousel-wrapper">
+      <div class="featured-carousel-container">
+        <div class="carousel-slider">
+                                    <div class="fieldable-panels-pane featured-carousel clearfix" style="background: url(https://prd-wret.s3-us-west-2.amazonaws.com/assets/magma/production/s3fs-public/styles/carousel_large/public/thumbnails/image/slider12.jpg?itok=hUm5QfHW) 50% 50% no-repeat; background-size: cover;">
+                          <div class="featured-overlay" style="background: rgba(0, 0, 0, 0.3)"></div>                  <div class="container carousel-container">
+                    <div class="row">
+                      <div class="col-sm-10 col-sm-offset-1">
+                        <h2 class="featured-title" style="text-align:center">LGBT Pride Month – Past, Present, Proud</h2>                                                  <div class="carousel-buttons-container" style="text-align:center">                                                                                    <a class="btn btn-default transparent-carousel" href="https://atthecore.usgs.gov/leadership/leaders-blog/lgbt-pride-month-past-present-proud" role="button">Read more</a>
+                                                                                </div>                                              </div>
+                    </div>
+                  </div>
+                </div>
+                                      <div class="fieldable-panels-pane featured-carousel clearfix" style="background: url(https://prd-wret.s3-us-west-2.amazonaws.com/assets/magma/production/s3fs-public/styles/carousel_large/public/thumbnails/image/FEVSslider2.PNG?itok=QUt3Z1Xe) 50% 50% no-repeat; background-size: cover;">
+                          <div class="featured-overlay" style="background: rgba(0, 0, 0, 0.3)"></div>                  <div class="container carousel-container">
+                    <div class="row">
+                      <div class="col-sm-10 col-sm-offset-1">
+                        <h2 class="featured-title" style="text-align:center">FEVS in Action Video Series</h2> <h3 class="featured-text visible-lg visible-md visible-sm" style="text-align:center">Pacific Coastal and Marine Science Center</h3>                                                  <div class="carousel-buttons-container" style="text-align:center">                                                                                    <a class="btn btn-default transparent-carousel" href="https://atthecore.usgs.gov/take-fevs-or-fevs-ttsi-2019" role="button">Watch the video</a>
+                                                                                </div>                                              </div>
+                    </div>
+                  </div>
+                </div>
+                                      <div class="fieldable-panels-pane featured-carousel clearfix" style="background: url(https://prd-wret.s3-us-west-2.amazonaws.com/assets/magma/production/s3fs-public/styles/carousel_large/public/thumbnails/image/Peoples%20Choice.png?itok=GRMiLWk4) 50% 50% no-repeat; background-size: cover;">
+                          <div class="featured-overlay" style="background: rgba(0, 0, 0, 0.3)"></div>                  <div class="container carousel-container">
+                    <div class="row">
+                      <div class="col-sm-10 col-sm-offset-1">
+                        <h2 class="featured-title" style="text-align:center">2019 Sammies People's Choice award</h2> <h3 class="featured-text visible-lg visible-md visible-sm" style="text-align:center">Vote for Tina Neal and the USGS Hawaiian Volcano Observatory team </h3>                                                  <div class="carousel-buttons-container" style="text-align:center">                                                                                    <a class="btn btn-default transparent-carousel" href="https://servicetoamericamedals.org/peoples-choice-award/" role="button">Vote</a>
+                                                                                </div>                                              </div>
+                    </div>
+                  </div>
+                </div>
+                    </div>
+        <div class="carousel-custom-arrow">
+          <div class="container">
+            <div class="row">
+             <div class="carousel-prev hidden-xs"><i class="fa fa-chevron-left"></i></div>
+              <div class="carousel-next hidden-xs"><i class="fa fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  
+  </div>
+  </div>
+
+  <!-- contained -->
+  <div class="container">
+	  <div class="row">
+	    	  </div>  
+  </div>
+
+  <!-- full width -->
+  <div class="full-width">
+      </div>
+
+  <!-- contained -->
+  <div class="container">
+	  <div class="row dotted-border-bottom">
+  	  <div class="col-md-4">
+    	  <div class="panel-pane pane-views-panes pane-homepage-panel-pane-1"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="view view-homepage view-id-homepage view-display-id-panel_pane_1 view-dom-id-6c4435bbf70545836ca54b2c37a352f7">
+            <div class="view-header">
+      <h2 class="pane-title">From Leadership</h2>
+<p>Read the latest communication from the ELT and USGS offices.</p>    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first hp-leadership">
+      
+  <div class="views-field views-field-type">        <span class="field-content small-text italics">Announcement -- Important Notice </span>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content h4"><a href="/leadership/employee-announcements/notice-ears-full-workforce-accountability-drill-tuesday-june-25">Notice of EARS full workforce accountability drill – Tuesday, June 25</a></span>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content">By <a href='/users/mpepplerusgsgov'>Marie C Peppler</a> <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2019-06-13T00:00:00-05:00">June 13, 2019</span> </span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even hp-leadership">
+      
+  <div class="views-field views-field-type">        <span class="field-content small-text italics">Announcement  </span>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content h4"><a href="/leadership/employee-announcements/usgs-weekly-highlights-report-week-june-10-2019">USGS Weekly Highlights Report for the Week of June 10, 2019</a></span>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"> <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2019-06-11T01:45:00-05:00">June 11, 2019</span> </span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd hp-leadership">
+      
+  <div class="views-field views-field-type">        <span class="field-content small-text italics">Announcement  </span>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content h4"><a href="/leadership/employee-announcements/gshp-weekly-photo-project">Weekly Photo Project: GSHP Pollen Nation</a></span>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content">By <a href='/users/shorvathusgsgov'>Scott R Horvath</a> <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2019-06-10T15:00:00-05:00">June 10, 2019</span> </span>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even views-row-last hp-leadership">
+      
+  <div class="views-field views-field-type">        <span class="field-content small-text italics">Announcement  </span>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content h4"><a href="/leadership/employee-announcements/landslide-hazards-hill-briefing">Landslide Hazards Hill Briefing</a></span>  </div>  
+  <div class="views-field views-field-nothing">        <span class="field-content"> <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2019-06-10T14:45:00-05:00">June 10, 2019</span> </span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <a class="btn btn-default" href="/leadership/leaders-blog">Read More</a>    </div>
+  
+  
+</div>  </div>
+
+  
+  </div>
+  	  </div>
+  	  <div class="col-md-7 col-md-offset-1">
+    	  <div class="panel-pane pane-fieldable-panels-pane pane-current-7 pane-bundle-link-block"  >
+  
+        <h2 class="pane-title">
+      I want to...    </h2>
+    
+  
+  <div class="pane-content">
+    <div id="link-blocks-wrapper">
+    <div class="link-block-description">access common tools and services.</div>
+    
+  <div class="link-block-inner">
+    <div class="link-row row">
+      
+            <div class="col-sm-3" >
+              <a href="https://qtime.ibc.doi.gov/proweb/qtime1538/login" target="_blank">
+                <div class="link-block" style="background-color:#8c8c8c">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>            
+                  <h4>Quicktime</h4>
+                </div>
+              </a> 
+            </div>
+             
+        
+            <div class="col-sm-3" >
+              <a href="/about-thecore" target="_self">
+                <div class="link-block" style="background-color:#8c8c8c">
+                  <i class="fa fa-at" aria-hidden="true"></i>            
+                  <h4>About @theCore</h4>
+                </div>
+              </a> 
+            </div>
+             
+        
+            <div class="col-sm-3" >
+              <a href="https://www.google.com/contacts/u/0/?hl=en&tab=mC#contacts/group/27/Directory" target="_blank">
+                <div class="link-block" style="background-color:#8c8c8c">
+                  <i class="fa fa-vcard-o" aria-hidden="true"></i>            
+                  <h4>Find an Employee</h4>
+                </div>
+              </a> 
+            </div>
+             
+        
+            <div class="col-sm-3" >
+              <a href="https://cge.concursolutions.com/default.asp?govt=true" target="_self">
+                <div class="link-block" style="background-color:#8c8c8c">
+                  <i class="fa fa-plane" aria-hidden="true"></i>            
+                  <h4>Concur</h4>
+                </div>
+              </a> 
+            </div>
+             
+        
+            <div class="col-sm-3" >
+              <a href="https://servicedesk.usgs.gov/" target="_blank">
+                <div class="link-block" style="background-color:#8c8c8c">
+                  <i class="fa fa-laptop" aria-hidden="true"></i>            
+                  <h4>Service Desk</h4>
+                </div>
+              </a> 
+            </div>
+             
+        
+            <div class="col-sm-3" >
+              <a href="https://doitalent.ibc.doi.gov/" target="_self">
+                <div class="link-block" style="background-color:#8c8c8c">
+                  <i class="fa fa-calendar-check-o" aria-hidden="true"></i>            
+                  <h4>DOI Talent</h4>
+                </div>
+              </a> 
+            </div>
+             
+        
+            <div class="col-sm-3" >
+              <a href="/a-to-z" target="_self">
+                <div class="link-block" style="background-color:#8c8c8c">
+                  <i class="fa fa-search" aria-hidden="true"></i>            
+                  <h4>A to Z Index</h4>
+                </div>
+              </a> 
+            </div>
+             
+        
+            <div class="col-sm-3" >
+              <a href="https://webforms.usgs.gov/Pages/default.aspx" target="_blank">
+                <div class="link-block" style="background-color:#8c8c8c">
+                  <i class="fa fa-wpforms" aria-hidden="true"></i>            
+                  <h4>Web Forms</h4>
+                </div>
+              </a> 
+            </div>
+             
+            </div>
+  </div>
+</div>    </div>
+
+  
+  </div>
+  	  </div>   	  
+	  </div>
+  </div>
+
+  <!-- full width -->
+  <div class="full-width">
+    	  </div> 
+
+  <!-- contained -->
+  <div class="container">
+    <div class="row">	  
+      <div class="col-md-4">
+        <div class="panel-pane pane-fieldable-panels-pane pane-vuuid-527cbb44-4651-4f6c-952d-7c89c2138153 pane-bundle-custom-block"  >
+  
+        <h2 class="pane-title">
+      Calendar    </h2>
+    
+  
+  <div class="pane-content">
+    <div id="link-blocks-wrapper">
+      <div class="link-block-description">See upcoming events pertaining to all-employees, including town halls, mandatory training deadlines, webinars, and more. 
+Please note: Unless otherwise stated, the information contained herein is intended for federal employees only. </div>
+      <div class="link-block-inner">
+      <a href="https://sites.google.com/a/usgs.gov/test-all-employee-calendar/" target="_blank"><img src="https://prd-wret.s3-us-west-2.amazonaws.com/assets/magma/production/s3fs-public/styles/large/public/thumbnails/image/webinars6.10.PNG?itok=T2dOKmHi"></a>
+              <br/></br/>
+                      <a class="btn btn-default" href="https://sites.google.com/a/usgs.gov/test-all-employee-calendar/" role="button">Access Calendar</a>         
+                 
+        
+  </div>
+</div>    </div>
+
+  
+  </div>
+	     </div>  
+  	  <div class="col-md-7 col-md-offset-1">
+    	  <div class="panel-pane pane-fieldable-panels-pane pane-vuuid-f9adc5c7-9b75-4992-b806-66562d4ca55b pane-bundle-hp-get-engaged"  >
+  
+        <h2 class="pane-title">
+      Get Engaged    </h2>
+    
+  
+  <div class="pane-content">
+    <div id="link-blocks-wrapper">
+      <div class="link-block-description">Participate in USGS activities.</div>
+      <div class="link-block-inner">
+    <div class="link-row">
+          <div class="col-sm-3 get-engaged-icon">
+            <h3>My<br>Profile</h3>
+            <a href="/my-profile" target="_self">
+              <div class="hp-engage-circle" style="background-color:#deb90a">
+                <i class="fa fa-user" aria-hidden="true"></i>            
+              </div>
+            </a> 
+
+            <a href="/my-profile" target="_self" class="btn-default">Access</a>
+          </div>
+
+        </div><div class="link-row">
+          <div class="col-sm-3 get-engaged-icon">
+            <h3>Contact<br>Jim</h3>
+            <a href="mailto:contactjim@usgs.gov" target="_blank">
+              <div class="hp-engage-circle" style="background-color:#deb90a">
+                <i class="fa fa-envelope" aria-hidden="true"></i>            
+              </div>
+            </a> 
+
+            <a href="mailto:contactjim@usgs.gov" target="_blank" class="btn-default">Email</a>
+          </div>
+
+        </div><div class="link-row">
+          <div class="col-sm-3 get-engaged-icon">
+            <h3>Town<br>Halls</h3>
+            <a href="/leadership/employee-announcements?&field_announcement_type_tid=351" target="_self">
+              <div class="hp-engage-circle" style="background-color:#deb90a">
+                <i class="fa fa-microphone" aria-hidden="true"></i>            
+              </div>
+            </a> 
+
+            <a href="/leadership/employee-announcements?&field_announcement_type_tid=351" target="_self" class="btn-default">View All</a>
+          </div>
+
+        </div><div class="link-row">
+          <div class="col-sm-3 get-engaged-icon">
+            <h3>Science<br>Spotlights</h3>
+            <a href="/science-spotlight/spotlight" target="_self">
+              <div class="hp-engage-circle" style="background-color:#deb90a">
+                <i class="fa fa-flask" aria-hidden="true"></i>            
+              </div>
+            </a> 
+
+            <a href="/science-spotlight/spotlight" target="_self" class="btn-default">Read Posts</a>
+          </div>
+
+        </div>  </div>
+</div>    </div>
+
+  
+  </div>
+  	  </div>  
+    </div>
+
+</div>
+
+</section>
+  </div>
+
+<footer class="footer">
+	<div class="back-to-top"></div>
+	<div class="container">
+		<div class="row footer-wrap">		
+	    <div class="col-lg-4 col-sm-12 footer-col-1" >
+        	<a class="logo navbar-btn pull-left" href="/" title="Home">
+        	  <img src="https://atthecore.usgs.gov/sites/all/themes/usgs_magma/logo.png" alt="Home" />
+        	</a>
+	    </div>  <!-- /.footer-col-1 -->
+
+	      <div class="col-lg-8 visible-lg footer-col-2 footer-menu-link" >
+
+	          <div class="region region-footer-col1">
+    <section id="block-superfish-2" class="block block-superfish clearfix">
+
+      
+  <ul  id="superfish-2" class="menu sf-menu sf-menu-footer sf-horizontal sf-style-none sf-total-items-5 sf-parent-items-0 sf-single-items-5 magma-main-header"><li id="menu-14124-2" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/leadership" class="sf-depth-1">From Leadership</a></li><li id="menu-14127-2" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="/about-thecore" class="sf-depth-1">About @theCore</a></li><li id="menu-14123-2" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="mailto:internal_feedback@usgs.gov" title="internal email" target="_blank" class="sf-depth-1">Contact Internal</a></li><li id="menu-14126-2" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/a-to-z" class="sf-depth-1">A - Z Index</a></li><li id="menu-12613-2" class="last odd sf-item-5 sf-depth-1 sf-no-children"><a href="/my-profile" class="sf-depth-1">My Profile</a></li></ul>
+</section>
+  </div>
+	      </div>  <!-- /.footer-col-2 -->
+
+	      <div class="footer-internal-tagline col-lg-12">
+	        <div class="magma-slogan">
+	          <a href="/" title="Home">@theCore</a>
+	        </div>
+	        <div class="magma-tagline">Internal USGS Access Only</div>
+	      </div>
+
+	  </div><!-- /.footer-wrap -->
+	</div><!-- /.container -->	
+</footer>		  <script src="https://atthecore.usgs.gov/sites/all/themes/bootstrap/js/bootstrap.js?pt1ilb"></script>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLMTX8S"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

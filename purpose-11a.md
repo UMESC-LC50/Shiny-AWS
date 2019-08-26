@@ -1,0 +1,146 @@
+
+
+#### Purpose
+Our research group studies the effects of different toxicants on multiple species. The data collected during our experiments
+require calculating three endpoints for each species for each toxicant. We created this web application to facilitate 
+reproducible analysis of the dose response. An example file can be loaded by pressing the "Calculate" button without 
+selecting or loading a file.
+
+
+#### Instructions
+This is a toxicology data modeling application for calculating concentrations that produce magnitudes of response (effect).
+
+TIP: The application uses the case-sensitive programming language, R. Pay close attention to uppercase and lowercase values for all text inputs (e.g. column headings, species codes, spacing, and model codes).
+
+TIP: The "Calculate" button only functions under the Results tab.
+
+TIP: Before opening the application, Create and format a comma separated value (.csv) source data file. If working in Excel, the file should      look like this:
+
+
+
+    species | replicate | conc  | time  | total | effect
+    ________|___________|_______|_______|_______|_________
+      FHM   |      1    | 0.000 |  96   |  10   |   0
+      FHM   |      2    | 0.081 |  24   |  10   |   2
+      FHM   |      3    | 0.240 |  48   |  10   |   9
+
+NOTE: The table above is only four (non-sequential) lines of the file. The Organisation for Economic Co-operation and 
+      Development (OECD) recommends at least seven concentrations exposures, a solvent carrier control exposure, and a blank exposure in each replicate.
+
+#####  1)	Assign headings for the first six columns according to the list below. These headings are case sensitive and required. Data must                conform to restrictions in the column descriptions below.
+      A)	species (unique identifier for each species in data set; e.g. RBT; alpha-numeric data is required)
+      B)	replicate (numeric identifier for separate trials; multiple trials can be modeled simultaneously; 
+            numeric data is required)
+      C)	conc (numeric concentration of treatment in parts per billion; numeric data required)
+      D)	time (duration of test; any units will work - but must be the same as entered on the calculator 
+            web page; default unit is hours; numeric data is required)
+      E)	total (number of animals in each test chamber; numeric data is required) 
+      F)	effect (number of individuals with response; e.g. total number dead; 
+            numeric data is required but blanks interpreted as zero)
+
+#####  2)	Data format instructions:    
+      A)	Additional columns can be added for user reference but will not be used in estimation.
+      B)	Entering required data:
+        i)	 For numeric data, non-numeric characters WILL NOT be interpreted as numeric characters. 
+             Remove any alpha or special characters from numeric fields (see above for which fields are numeric).
+        ii)	 Duplicate concentrations in the same trial replicate will cause an error. Any toxicity trial 
+             with replicated concentrations must be consolidated into a single row of data or assigned separate 
+             replicate numbers.
+      C)    Save the file as a .csv extension - save Excel files as "CSV (Comma Delimited)"
+  
+#####  3)	Upload the CSV file to the server and load it into the application.
+      A)	Open the application and select "Browse" under "Choose file to upload". 
+            This will open Windows Explorer to your home computer's "Libraries".
+      B)	Navigate to the location of the CSV file you created above.
+      C)	Select the file and click "Open" in Windows Explorer. The tool 
+            application will display the file name next to the "Browse" button 
+            and "Upload Complete" below the file name once the upload is complete.
+      D)	Press the "Load File" button to load the chosen file into the application.
+      E)    A progress bar will appear as the file is loaded.
+
+#####  4)	Press the "Calculate" button (only works in the Results tab) to calculate response using default conditions.
+      A)	Both the "Results" and "Data" tabs should fill with tables.
+      B)	The "Results" tab:
+        i)	The graph will display the best fitted curve. The tables below the 
+            graph will show data for: the first species listed in the CSV file, 
+            the largest time point measured for that species, and all replicates 
+            in the CSV file.
+        ii) The estimated dose table shows the estimated value.
+          (1)	The replicate number.
+          (2)	The endpoint value.
+          (3)   The estimated dose is in the same units used in the data file,
+                which should have been converted to ppb, and is displayed ppb.
+          (4)   The standard error of the estimated value.
+          (5)   The lower confdence limit of the estimated value.
+          (6)   The upper confdence limit of the estimated value.
+          (7)	The prediction quality is calculated based on number of animals 
+                with response. 
+                Accepted - indicates that at least one concentration have between 15% and 85% animals affected 
+                by the treatment. Poor - indicates that this replicate has no concentration between 15% and 85% 
+                animals affected by the treatment.    
+        iii)The best model is determined by:
+          (1)	The "Models" table at the bottom of the Results tab will display the best model for each
+                replicate, which was used to calculate the value in the "estimated dose (ppb)"
+                column in the "Model Results" table. 
+          (2)	The "Models" table sorts the model options by "AIC". AIC stands for 
+                the Akaike information criterion, and the AIC option is used to rank 
+                models in this application.
+          (3)	The lowest AIC model has been selected for each replicate in the table 
+                to calculate the estimated doses.  
+          (4)	A list of models that are supported by this application can be 
+                found under the "Available Models" tab. 
+          (5)   Model descriptions can be viewed in the "Model Statistics" tab. 
+      C)	The "Data" tab will display the data provided in the CSV file loaded to the application for the user 
+            inputs selected only.
+      D)	The "Pooled Results" tab will display a table for pooled replicates if 3 or more replicates are 
+            available for a selected species and time point. This calculation only uses replicates of accepted 
+            quality.
+      E)	The "Model Statistics" tab includes the "Best Model" table (repeated from the Results tab),
+            a table of coefficients (including: standard error, t-value,and p-value) for each 
+            replicate (using the best model), and the definitions for each possible model used in this
+            application.
+    
+#####  5)	Calculate and display values for designated species, response levels, times, replicates, data, and models.
+      A)	Species selection - values and curves for other species in the CSV file are displayed by typing the 
+            species name or code as entered in the CSV file into the "species" box in the application and 
+            pressing the "Calculate" button.
+      C)  Response level slide bars
+            A 50% lethal/effective concentration is automatically determined, The "Lowest response level" and 
+            "Highest response level" adds two additional endpoints calculated for each calculation.
+        i)  The "Lowest response level" provides a range from LC<sub>01</sub> to LC<sub>25</sub> in intervals of 
+            one unit.
+        ii) The "Highest response level" provides a range from LC<sub>85</sub> to LC<sub>99.9</sub> in intervals
+            of one-tenth of a unit.
+      B)	Time selection
+        i)	Choose a time point by typing the specific time point into the "time" box and pressing the 
+            "Calculate" button.
+      C)	Replicate selection
+        i)	  Choose a replicate by typing a value into the "first replicate" box.
+        ii)	  Choose additional replicates by typing a value in the "last replicate" box.
+        iii)	Press the "Calculate" button
+      D)	An automated approach to the Litchfield Wilcoxon model has also been included.
+        i)	  It is activated by typing "LW1949" into the "model" box.
+        ii)	  This model is not designed to calculate more than one replicate at a time.
+      E)    Model selection - results for any candidate model can be viewed by typing the model designator 
+            (i.e. W2.3u) into the "Use specific model" box and pressing "Calculate".
+          
+        
+#####   6)	Saving results 
+    Tables and graph can be copied by highlighting selections and using Ctrl-C to copy selections which can 
+    then be pasted into an external application of the user's choice.
+
+#### Error messages
+    ##### Error: argument is of length zero
+    This error occurs when the "Calculate" button is used on the "Instructions" page.
+    Corrective action: Press "Calculate" button on the "Results" page.
+    
+
+
+#### Time limits
+
+    1)   The idle time limit is 15 minutes before automatic log out occurs.
+    2)   The start-up time limit is 2 minutes to load the first file.
+    3)   The maximum time between keystroke entries is 60 seconds
+
+
+

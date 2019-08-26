@@ -1,0 +1,69 @@
+<!-- BEGIN USGS Footer Template -->
+
+<footer class="footer">
+	<div class="tmp-container">
+		<!-- .footer-wrap -->
+			<!-- .footer-doi -->
+			<div class="footer-doi">
+				<!-- footer nav links -->
+				<ul class="menu nav">
+					<li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/privacy">DOI Privacy Policy</a></li>
+					<li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/laws/policies_notices.html">Legal</a></li>
+					<li class="leaf menu-links menu-level-1"><a href="https://www2.usgs.gov/laws/accessibility.html">Accessibility</a></li>
+					<li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/sitemap.html">Site Map</a></li>
+					<li class="last leaf menu-links menu-level-1"><a href="https://answers.usgs.gov/">Contact USGS</a></li>
+				</ul>
+				<!--/ footer nav links -->      
+			</div>
+			<!-- /.footer-doi -->
+
+			<hr>
+
+		<!-- .footer-utl-links -->
+		<div class="footer-doi">
+			<ul class="menu nav">
+				<li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/">U.S. Department of the Interior</a></li>
+				<li class="leaf menu-links menu-level-1"><a href="https://www.doioig.gov/">DOI Inspector General</a></li>
+				<li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/">White House</a></li>
+				<li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/omb/management/egov/">E-gov</a></li>
+				<li class="leaf menu-links menu-level-1"><a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a></li>
+				<li class="last leaf menu-links menu-level-1"><a href="https://www2.usgs.gov/foia">FOIA</a></li>
+			</ul>
+			</div>			
+		<!-- /.footer-utl-links -->
+		<!-- .footer-social-links -->
+		<div class="col-sm-1 hidden-xs">
+        <div class="breadcrumb-social">
+          <!-- social media -->
+          <div class="header-social-share">
+            <span class="fa fa-share-alt"></span>
+            <i class="carret-dropdown fa fa-caret-up"></i>
+          </div>
+          <!-- social sharing feature  -->
+          <div class="header-social-container">
+            <div class="header-social-dropdown">
+              <ul>
+                <li><img src="www/twitter.png" alt="Image" width="500" height="600">
+                <a class="share-facebook" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-official"></i> Facebook</a>
+                </li>
+                <li><a class="share-twitter" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li><a class="share-linkedin" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                <li><a class="share-digg" target="_blank" title="Share on Digg"><i class="fa fa-digg"></i> Digg</a></li>
+                <li><a class="share-reddit" target="_blank" title="Share on Reddit"><i class="fa fa-reddit-square"></i> Reddit</a></li>
+                <li><a class="share-stumbleupon" target="_blank" title="Share on StumbleUpon"><i class="fa fa-stumbleupon-circle"></i> StumbleUpon</a></li>
+                <li><a class="share-pinterest" target="_blank" title="Share on Pinterest"><i class="fa fa-pinterest-square"></i> Pinterest</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- social sharing feature-->
+        </div>
+      </div>
+    </div>
+		<!-- /.footer-social-links -->
+		<!-- /.footer-wrap -->	
+</footer>
+<!-- END USGS Footer Template- -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQR8KP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->

@@ -1,0 +1,60 @@
+<style>
+.hmisctable803519 {
+border: 1px solid gray;
+border-collapse: collapse;
+font-size: 100%;
+}
+.hmisctable803519 td {
+text-align: right;
+padding: 0 1ex 0 1ex;
+}
+.hmisctable803519 th {
+color: Black;
+text-align: center;
+padding: 0 1ex 0 1ex;
+font-weight: bold;
+}
+</style>
+<table class="hmisctable803519" border="1">
+<tr><td>element</td></tr>
+</table>
+<style>
+.hmisctable579556 {
+border: 1px solid gray;
+border-collapse: collapse;
+font-size: 100%;
+}
+.hmisctable579556 td {
+text-align: right;
+padding: 0 1ex 0 1ex;
+}
+.hmisctable579556 th {
+color: Black;
+text-align: center;
+padding: 0 1ex 0 1ex;
+font-weight: bold;
+}
+</style>
+<table class="hmisctable579556" border="1">
+<tr><td>element</td></tr>
+</table>
+<style>
+.hmisctable561148 {
+border: 1px solid gray;
+border-collapse: collapse;
+font-size: 100%;
+}
+.hmisctable561148 td {
+text-align: right;
+padding: 0 1ex 0 1ex;
+}
+.hmisctable561148 th {
+color: Black;
+text-align: center;
+padding: 0 1ex 0 1ex;
+font-weight: bold;
+}
+</style>
+<table class="hmisctable561148" border="1">
+<tr><td>element</td></tr>
+</table>

@@ -1,0 +1,61 @@
+h1 {
+	font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 22px;
+}
+p {
+	font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 19.99px;
+}
+blockquote {
+	font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 29.99px;
+}
+h4{
+	font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 40px;
+}
+pre {
+	font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.57px;
+}
+fieldset { 
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
